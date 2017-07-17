@@ -33,5 +33,21 @@
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {  
+
+            navigator.serviceWorker.register('/sw.js').then(function (registration) {    // Registration was successful
+                   
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);  
+
+            }).catch(function (err) {    // registration failed :(
+                   
+                console.log('ServiceWorker registration failed: ', err);  
+            });
+
+        }
+    </script>
+
     </body>
 </html>

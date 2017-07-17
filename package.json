@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-connect": "*",
+    "matchdep": "*",
     "@alrra/travis-scripts": "^3.0.1",
     "apache-server-configs": "2.14.0",
     "archiver": "^2.0.0",
